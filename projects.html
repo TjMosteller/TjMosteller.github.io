@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <!-- added the viewport for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- changed the title to Projects -->
+    <title>Projects</title>
+    <!-- added the normalize style sheet and my main.css style sheet -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- added slicknav stylesheet -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+    <!-- used google fonts to upload both Merriweather and open sans -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+
+
+    <!-- SlidesJS Optional: If you'd like to use this design -->
+    <style>
+        /*body {*/
+            /*-webkit-font-smoothing: antialiased;*/
+            /*font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+            /*color: #232525;*/
+            /*!*padding-top:70px;*!*/
+        /*}*/
+
+        #slides {
+            display: none;
+        }
+
+        #slides .slidesjs-navigation {
+            margin-top:3px;
+        }
+
+        #slides .slidesjs-previous {
+            margin-right: 5px;
+            float: left;
+        }
+
+        #slides .slidesjs-next {
+            margin-right: 5px;
+            float: left;
+        }
+
+        .slidesjs-pagination {
+            margin: 6px 0 0;
+            float: right;
+            list-style: none;
+        }
+
+        .slidesjs-pagination li {
+            float: left;
+            margin: 0 1px;
+        }
+
+        .slidesjs-pagination li a {
+            display: block;
+            width: 13px;
+            height: 0;
+            padding-top: 13px;
+            background-image: url(img/pagination.png);
+            background-position: 0 0;
+            float: left;
+            overflow: hidden;
+        }
+
+        .slidesjs-pagination li a.active,
+        .slidesjs-pagination li a:hover.active {
+            background-position: 0 -13px
+        }
+
+        .slidesjs-pagination li a:hover {
+            background-position: 0 -26px
+        }
+
+        #slides a:link,
+        #slides a:visited {
+            color: #333
+        }
+
+        #slides a:hover,
+        #slides a:active {
+            color: #9e2020
+        }
+
+        .navbar {
+            overflow: hidden
+        }
+    </style>
+    <!-- End SlidesJS Optional-->
+
+    <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+    <style>
+        #slides {
+            display: none
+        }
+
+        .container {
+            margin: 0 auto
+        }
+
+        /* For tablets & smart phones */
+        @media (max-width: 767px) {
+            body {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .container {
+                width: auto
+            }
+        }
+
+        /* For smartphones */
+        @media (max-width: 480px) {
+            .container {
+                width: auto
+            }
+        }
+
+        /* For smaller displays like laptops */
+        @media (min-width: 768px) and (max-width: 979px) {
+            .container {
+                width: 724px
+            }
+        }
+
+        /* For larger displays */
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px
+            }
+        }
+    </style>
+    <!-- SlidesJS Required: -->
+
+
+    <!-- load jQuery library from CDN (Content Delivery Network) -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>-->
+
+
+    <!-- loads the SlickNav javascript/jQuery plugin-->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#nav_menu').slicknav( { prependTo:"#mobile_menu"} );
+        });
+
+
+    </script>
+
+
+
+
+
+    <style>
+        /* Prevents slides from flashing */
+        #slides {
+            display:none;
+        }
+    </style>
+
+    <!-- loads the jquery slideshow -->
+    <script src="js/jquery.slides.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#slides").slidesjs({
+                width: 940, /* gives a width of 940 pixels to the slide show */
+                height: 528, /* gives a height of 528 pixels to the slide show */
+                navigation: {
+                    active: false, /* gets rid of the "next" and "previoius" buttons */
+                    // [boolean] Generates next and previous buttons.
+                    // You can set to false and use your own buttons.
+                    // User defined buttons must have the following:
+                    // previous button: class="slidesjs-previous slidesjs-navigation"
+                    // next button: class="slidesjs-next slidesjs-navigation"
+                    effect: "slide"
+                    // [string] Can be either "slide" or "fade".
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<!-- created the header main and the footer -->
+<body>
+
+<header>
+    <!-- pasted the first two lines from projects_text.txt inside of the header and added an h1 element to the first
+         item, and an h2 element to the second -->
+    <h1>Projects</h1>
+    <h2>Tj Mosteller</h2>
+
+</header>
+
+<!-- coded a navigation menu to navigate to other pages -->
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html" class="current">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li> <!--set the class as current -->
+    </ul>
+</nav>
+
+<!-- created a new navigation menu with the id "mobile_menu" for slicknav -->
+<nav id="mobile_menu"></nav>
+
+
+
+<main>
+
+
+
+    <!-- created a section and an aside inside of main so i can float the aside to the left -->
+    <section>
+        <!-- pasted main content from projects_text.txt inside of section and added a paragraph element -->
+        <p> Since i just declared my major last semester, I have not had a chance to accumulate a collection of
+            projects. However pictures of the final project I completed for HTML and JavaScript can be found in the
+            slideshow on this page. In this project I was tasked with creating multiple web pages that demonstrated my
+            skills using HTML, CSS, and jquery. In addition to this I was tasked with making the website responsive, so
+            it could be viewed on any type of device whether it be monitor for a desktop, or a cell phone screen.</p>
+
+
+
+        <!-- all images for the slide show are coded here -->
+        <div id="slides">
+            <img src="images/home.png" alt="Home page">
+            <img src="images/education.png" alt="Education page">
+            <img src="images/projects.png" alt ="Projects page">
+            <img src="images/experience.png" alt="Experience page">
+        </div>
+
+
+
+
+
+    </section>
+
+    <!-- created a section and an aside inside of main so i can float the aside to the left -->
+    <aside>
+            <ul>
+                <li><b><u>General Overview</u></b></li> <!-- used <b> and <u> to bold and underline "General Overview"-->
+                <li>Responsive design</li>
+                <li>Implements HTML</li>
+                <li>Implements CSS</li>
+                <li>Implements jquery slideshow</li>
+                <li>Implements horizontal navigation</li>
+                <li>Implements slicknav</li>
+                <li>Pictures used as links</li>
+                <li>Implements unordered lists</li>
+            </ul>
+
+    </aside>
+
+</main>
+
+<footer>
+    <!-- added h3 element to the following line -->
+    <h3> Prepared by: Tj Mosteller </h3>
+</footer>
+
+</body>
+
+</html>

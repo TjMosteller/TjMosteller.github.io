@@ -1,0 +1,245 @@
+
+html {
+    background-color: #2E2E2E; /* set the background color to gray for the html */
+}
+
+/* set the default font to sans-serif, in case the browser does not recognize the default font it will use verdana,
+ * or helvetica or arial
+ */
+body {
+    font-family: Verdana, Arial, Helvitica, sans-serif;
+    width: 97%; /* set the width to 97% of its parent element which is the html */
+    max-width: 900px; /* set a max width of 1000 pixels to the page */
+    background-color: white; /* set the background color to white, so the color from html does not bleed through */
+    margin: .5em auto; /* set the top margin to 15px, the left and right to be centered and the bottom to zero */
+    border: .25em solid black; /* gave the body a solid black border of 2px */
+}
+
+
+
+header {
+    /* used a gradient for the header that supports multiple browsers*/
+    background-image: -moz-linear-gradient(90deg, #0A1827 0%, #0D1F33 65%, #0C1C2E 78%, #0A1929 100%);
+    background-image: -webkit-linear-gradient(90deg, #0A1827 0%, #0D1F33 65%, #0C1C2E 78%, #0A1929 100%);
+    background-image: -o-linear-gradient(90deg, #0A1827 0%, #0D1F33 65%, #0C1C2E 78%, #0A1929 100%);
+    background-image: linear-gradient(90deg, #0A1827 0%, #0D1F33 65%, #0C1C2E 78%, #0A1929 100%);
+
+    /* background-color:#1A1A5C; */
+    /*background-color:#212171; !* set the background color to a dark blue *!*/
+
+    color: whitesmoke; /* set the text color to white */
+    padding: .8em .5em 1.5em 5.5em; /* set padding to .8 em on top .5em on the right 1.5em on bottom and 5.5em on the left */
+}
+
+header h2 {
+    text-indent: 1.5em; /* indented text for the h2 element inside of the header by 1.5em */
+    font-family: 'Merriweather', serif; /* used google fonts to change the font of h2 element in the header*/
+}
+
+/* set h3 h2 h1 and p elements to all have a padding and margin of 0 */
+h3, h2, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Merriweather', serif; /* changed h1 element font to merriweather*/
+}
+
+h2 {
+    font-family: 'Merriweather', serif; /* changed h2 font to merriweather*/
+}
+
+h3 {
+    font-size: 1.4em; /* set font size to 1.4 em*/
+    color: whitesmoke; /* set font color to white smoke */
+    font-family: 'Merriweather', serif; /* used google fonts to change the font of all h3 elements*/
+
+
+}
+
+p {
+    font-size: 1.1em; /* set the font size to 1.1em for all paragraph elements */
+    font-family: 'Open Sans', sans-serif; /* used google fonts to change the font of all p elements*/
+
+}
+
+
+
+section h2 {
+    text-indent: 0; /* set the text indent for h2 back to zero in the section element */
+    font-size: 1.42em; /* set the font size to 1.42em for h2 in the section element */
+    padding: 0 0 .7em; /*set padding to .7em on the bottom */
+}
+
+#class_list li {
+    list-style: none; /*removed the bullets from the li elements */
+    padding-bottom: .4em;
+    text-indent: 0; /*set text indentation to 0em */
+    font-family: 'Open Sans', sans-serif; /* used google fonts to change the font of all p elements*/
+
+
+}
+
+#job_list li {
+    text-indent: .6em; /*set text indentation to 0em */
+    font-family: 'Open Sans', sans-serif; /* changed font to open sans using google fonts*/
+}
+/* Set the background color to black for the nav menu, margin to center itself horizontally and 0 on top and bottom.
+ * Also set padding to zero and gave it a height of 2.5em
+ */
+#nav_menu {
+    background-color:black;
+    margin: 0 auto;
+    height: 3.1em;
+    padding: 0;
+}
+
+#nav_menu{
+    padding: 0; /* set padding to zero for nav menu */
+
+
+}
+
+/* set padding to .3em on top and the margin to zero on all sides */
+#nav_menu ul {
+    padding: .3em 0 0 0;
+    margin: 0;
+}
+
+
+#nav_menu ul li {
+    float: left; /* floated the li in the ul to the left so that they would appear on the same line */
+    width: 25%; /* gave each li element a width of 25% of the body */
+    list-style: none; /* set list-style to none to remove the bullet points*/
+    font-family: 'Merriweather', serif; /* changed nav menu font to merriweather using google font*/
+}
+
+#nav_menu ul li a {
+    text-decoration: none; /* set text decoration to none so that the underlines would disappear */
+    text-align: center; /* aligned the text to be centered in the li element */
+    display: block; /* set the display to block so that the whole anchor element will be click-able */
+    padding: 0.7em 0; /* set the padding to 0.7em on both top and bottom*/
+    background-color: black; /* set the background color to black*/
+    color: whitesmoke; /* set the font color to white smoke */
+}
+
+
+#nav_menu ul li a.current {
+    color: #5B9496; /* set the current anchor text color to aqua to let the user know where they are at*/
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: gray; /* set the background color to gray when it has focus, or when a mouse is hovering over it*/
+}
+
+aside img {
+    width: 90%; /* set the width of all aside image elements to 90% */
+    min-width: 50px;
+
+}
+aside {
+    float: right; /* set aside to float to the right of the page */
+    width: 25%; /* set the width for aside at 25% */
+    padding: 2em 1.5em 1em 1.5em; /* gave aside a padding of 1em on top and bottom,
+                                    .8em on the right and 3.2 em on the left */
+}
+
+aside ul li {
+    list-style: none;
+    margin-bottom: 1em;
+    font-family: 'Open Sans', sans-serif; /* used google fonts to change the font to Open Sans*/
+}
+
+section {
+    width: 60%; /* set the width of section to 60% */
+    float: left; /* floated section to the left*/
+    padding: 1.5em 0 1.5em 3em; /* gave padding to the section of 1.5em on top and bottom, and 3em on left */
+    text-indent: 2em; /* indented the text by 2em in section */
+}
+
+h1 {
+   margin: 0; /* set margin to zero */
+}
+
+footer {
+    text-indent: 2em; /* indented the text by 2em */
+    border-top: 3px solid black; /* set a top border of 3px solid black */
+    font-size: .5em; /* set the font size to .5em */
+    padding: 1.5em; /* set the padding to 1.5em */
+    /* used a gradient for the header that supports multiple browsers*/
+    background-image: -moz-linear-gradient(90deg, #0A1827 0%, #0D1F33 65%, #0C1C2E 78%, #0A1929 100%);
+    background-image: -webkit-linear-gradient(90deg, #0A1827 0%, #0D1F33 65%, #0C1C2E 78%, #0A1929 100%);
+    background-image: -o-linear-gradient(90deg, #0A1827 0%, #0D1F33 65%, #0C1C2E 78%, #0A1929 100%);
+    background-image: linear-gradient(90deg, #0A1827 0%, #0D1F33 65%, #0C1C2E 78%, #0A1929 100%);
+    clear: both;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 690px ){ /* the css inside  @ media will only work when the screen falls below 690 pixels*/
+    aside {
+        float: none; /* eliminates the float in aside*/
+        width: 50%; /* was 85% */
+        margin: 0 auto; /* centers the content in aside*/
+        text-align: center; /* centers the text in aside */
+    }
+
+
+    section {
+        width: 85%; /* reduces the width by 15%*/
+        float: none /* eliminates the float in section*/
+    }
+}
+
+@media only screen and (max-width: 500px){ /* the css inside @media will only work when the screen falls below 500 pixels*/
+    section {
+        float: none; /* clears the float for the section when the screen falls below 500 pixels */
+        width: 80%; /* reduces the width by 20%*/
+    }
+    #nav_menu {
+        display: none; /*hides the nav menu when screen is below 500px*/
+    }
+
+
+    #mobile_menu {
+        display: block; /* displays the slicknav menu when the screen is below 500px*/
+    }
+}
+
+
+@media only screen and (max-width: 400px ) { /* the css inside  @ media will only work when the screen falls below 400 pixels*/
+    section {
+        width: 76%; /* reduces the width of section by 24%*/
+        font-size: 75%; /* reduces the font size by 25%*/
+    }
+
+    header {
+        /*font-size: 75% !* reduces the font in the header to 75%*!*/
+    }
+}
+
+@media only screen and (max-width: 330px ){ /* the css inside  @ media will only work when the screen falls below 330 pixels*/
+    section {
+        width: 70%; /* reduces the width by 30% */
+        font-size: 75%; /* reduces the font size by 25%*/
+    }
+
+}
+
+@media only screen and (max-width: 250px ){ /* the css inside  @ media will only work when the screen falls below 250 pixels*/
+    header {
+        /*font-size: 60%*/
+    }
+}
+
+
+
+
+
+
+

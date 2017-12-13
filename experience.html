@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- added the viewport for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- changed the title to Work Experience -->
+    <title>Work Experience</title>
+    <!-- added the normalize style sheet and my main.css style sheet -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- added slicknav stylesheet -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+    <!-- used google fonts to upload both Merriweather and open sans -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+
+    <!-- load jQuery library from CDN (Content Delivery Network) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+    <!-- loads the SlickNav javascript/jQuery plugin-->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#nav_menu').slicknav( { prependTo:"#mobile_menu"} );
+        });
+    </script>
+
+
+</head>
+
+<!-- created the header main and the footer -->
+<body>
+
+<header>
+    <!-- pasted the first two lines from workexperience_text.txt inside of the header and added an h1 element to the
+         first item, and an h2 element to the second -->
+    <h1>Work Experience</h1>
+    <h2>Tj Mosteller</h2>
+
+</header>
+
+<!-- coded a navigation menu to navigate to other pages -->
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html" class="current">Experience</a></li> <!--set the class as current -->
+    </ul>
+</nav>
+
+<!-- created a new navigation menu with the id "mobile_menu" for slicknav -->
+<nav id="mobile_menu"></nav>
+
+<main>
+
+
+
+
+    <!-- created a section and an aside inside of main so i can float the aside to the left -->
+    <section>
+        <!-- pasted main content from workexperience_text.txt inside of section and added a paragraph element -->
+        <p> The majority of my time in the workforce was spent in various restaurants. I spent about six years, working
+            in them altogether. During my time spent in restaurants I have worked as a cashier, a host, a dishwasher, a
+            cook, and a team lead. The following list shows where I have worked in chronological order </p>
+
+            <!-- created an unordered list to list prior jobs, then created li elements for each instance
+                 of a prior job -->
+        <ul id="job_list">
+            <li> Subway -cashier, line “cook” </li>
+            <li> Denny’s - host, dishwasher, cook </li>
+            <li> Applebee’s - cook, team lead </li>
+            <li> R’ Corner Bar & Grill - cook </li>
+            <li> 28/65 Brewhouse - cook, team lead </li>
+        </ul>
+
+        <!-- pasted main content from work experience_text.txt inside of section and added a paragraph element -->
+        <p> Along with my experience in restaurant I have a lot of experience in manual labor. I have done a lot of odd
+            jobs including landscaping, cutting down trees, painting, tiling, roofing, and some construction. I have
+            also been certified to operate both a pallet jack and a forklift, and have a lot of experience with both
+            loading and unloading trucks with a pallet jack, as well as auditing the shipments.</p>
+
+    </section>
+
+
+    <!-- created a section and an aside inside of main so i can float the aside to the left -->
+    <aside>
+
+
+        <!-- image found on http://pixar.wikia.com/wiki/File:Subway_new_logo.png -->
+        <a href="http://www.subway.com/en-us" target="_blank"><img src="images/subway.png" alt="Subway logo" /></a>
+
+        <!-- image found on https://en.wikipedia.org/wiki/File:Denny%27s_logo.svg -->
+        <a href="https://www.dennys.com/" target="_blank"><img src="images/dennys.png" alt="Dennys logo" /></a>
+
+        <!-- image found on http://universe.byu.edu/2013/02/01/applebees-waitress-fired-for-posting-customer-complaint/ -->
+        <a href="http://applebees.com/" target="_blank"><img src="images/applebees.png" alt="Applebees logo" /></a>
+
+        <!-- image found on http://www.2865brewhouse.com/ -->
+        <a href="http://www.2865brewhouse.com" target="_blank"><img src="images/brewhouse.png" alt="Brewhouse 2865 logo" /></a>
+    </aside>
+
+</main>
+
+<footer>
+    <!-- added h3 element to the following line -->
+    <h3> Prepared by: Tj Mosteller </h3>
+</footer>
+
+</body>
+
+</html>
